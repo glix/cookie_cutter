@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <!--cVal--><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
+        <script src="jquery.cookie.js"></script>
+        <script src="jquery.cookiecuttr.js"></script>
+        <link rel="stylesheet" href="cookiecuttr.css">
+        <script>
+           $(document).ready(function () {
+                $.cookieCuttr({
+                cookieAnalytics: false,
+                cookiePolicyPage: true,
+                cookieDeclineButton: true,
+                cookiePolicyPageMessage: 'We use cookies, just to track visits to our website, we store no personal details.'
+            });
+           }); 
+        </script>
+        <script type="text/javascript" src="common.js"></script>
+        <!--cVal-->
+ 
+</head>
+<body onload="CheckId();">
+<input type="hidden" name="CookieVal" id="CookieVal" value="accept" />
+        <div id="LifeInsurance" style="display: block; background-color:green; height:400px;width:500px; margin-top:50px;">
+			<h1>if you click on decline button then i will invisible</h1>
+		</div>
+        <div class="panel_holder" id="Calculator" style="display: block; background-color:red; height:400px;width:500px;">
+			<h1>if you click on decline button then i will invisible</h1>
+		</div>
+		<div class="panel_holder" id="show" style="display:block; background-color:blue; height:400px;width:700px;">
+			<h1>if you want to visit red and green div then you need to clear your browser history and refresh the page</h1>
+		</div>
+ </body>
+</html>
